@@ -36,10 +36,8 @@ ffmpeg
 youtube-dl
 mdf2iso
 nasm
-mono
+mono-complete
 acpica-tools
-cdrtools
-mdf2iso
 vim-X11
 wimlib
 android-tools
