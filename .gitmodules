@@ -1,0 +1,18 @@
+[submodule "dotfiles/.zsh/zsh-autosuggestions"]
+	path = dotfiles/.zsh/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions.git
+[submodule "dotfiles/.zsh/zsh-syntax-highlighting"]
+	path = dotfiles/.zsh/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "dotfiles/.zsh/zsh-completions"]
+	path = dotfiles/.zsh/zsh-completions
+	url = https://github.com/zsh-users/zsh-completions.git
+[submodule "dotfiles/zsh/zsh-completions"]
+	path = dotfiles/zsh/zsh-completions
+	url = https://github.com/zsh-users/zsh-completions.git
+[submodule "dotfiles/zsh/zsh-syntax-highlighting"]
+	path = dotfiles/zsh/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "dotfiles/zsh/zsh-autosuggestions"]
+	path = dotfiles/zsh/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions.git

@@ -1,0 +1,38 @@
+[legacy]
+theme-variant='system'
+
+[legacy/profiles:]
+default='f6b6a6fd-a7b6-46c0-a275-6f466b8a5515'
+list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', 'f6b6a6fd-a7b6-46c0-a275-6f466b8a5515']
+
+[legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+background-color='rgb(230,224,224)'
+background-transparency-percent=3
+bold-color='rgb(152,28,141)'
+bold-color-same-as-fg=true
+cursor-colors-set=true
+cursor-foreground-color='rgb(255,255,255)'
+foreground-color='rgb(189,143,240)'
+highlight-colors-set=true
+highlight-foreground-color='rgb(188,151,229)'
+palette=['rgb(46,52,54)', 'rgb(204,0,0)', 'rgb(78,154,6)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(117,80,123)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(138,226,52)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
+use-theme-colors=false
+use-transparent-background=true
+visible-name='Light'
+
+[legacy/profiles:/:f6b6a6fd-a7b6-46c0-a275-6f466b8a5515]
+background-color='rgb(41,51,51)'
+background-transparency-percent=3
+bold-color='rgb(152,28,141)'
+bold-color-same-as-fg=true
+cursor-background-color='rgb(220,217,217)'
+cursor-colors-set=true
+cursor-foreground-color='rgb(255,255,255)'
+foreground-color='rgb(189,143,240)'
+highlight-background-color='rgb(255,255,255)'
+highlight-colors-set=true
+highlight-foreground-color='rgb(160,125,198)'
+palette=['rgb(46,52,54)', 'rgb(204,0,0)', 'rgb(78,154,6)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(117,80,123)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(138,226,52)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
+use-theme-colors=false
+use-transparent-background=true
+visible-name='Dark'
