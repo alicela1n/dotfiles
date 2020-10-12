@@ -16,10 +16,10 @@ sudo wget https://fedorapeople.org/groups/virt/virtio-win/virtio-win.repo \
 # Update and install everything
 sudo dnf update -y
 sudo dnf groupupdate core -y
-sudo dnf install $(cat packages/dnf)
+sudo dnf install -y $(cat packages/dnf)
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install -y $(cat packages/flatpak)
 
 # Installing package groups
-sudo dnf group install --with-optional virtualization
-sudo dnf groupinstall "Development Tools"
+sudo dnf group install -y --with-optional virtualization
+sudo dnf groupinstall -y "Development Tools"
