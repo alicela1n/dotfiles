@@ -24,13 +24,14 @@ flatpak install -y $(cat packages/flatpak)
 sudo dnf group install -y --with-optional virtualization
 sudo dnf groupinstall -y "Development Tools"
 
+
+echo "Do you want to install GNOME tweaks? (answer no if not on GNOME)"
 while true
 do
 read -r -p "[Y/n] " input
 case $input in
     [yY][eE][sS]|[yY])
-    echo "Do you want to install GNOME tweaks? (answer no if not on GNOME)"
-    sudo dnf install gnome-tweaks
+        sudo dnf install gnome-tweaks
     ;;
     [nN][oO]|[nN])
     echo "Skipping..."
