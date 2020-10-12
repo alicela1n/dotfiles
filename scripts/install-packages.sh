@@ -5,7 +5,6 @@ if [[ 'which pacman' ]]; then
     sudo pacman -S $(cat packages/pacman)
 elif [[ 'which dnf' ]]; then
     sudo dnf install $(cat packages/dnf)
-elif [[ '
 else
     echo "Unknown distro, install packages yourself"
 fi
