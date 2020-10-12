@@ -4,7 +4,7 @@ DIST=$(awk '/^ID=/' /etc/*-release | awk -F'=' '{ print tolower($2) }')
 
 if [[ $DIST == "arch" ]]; then
     echo 'Arch'
-    sudo pacman -S $(cat packages/pacman)
+    sudo pacman -Syu $(cat packages/pacman)
 elif [[ $DIST == "fedora" ]]; then
     echo "Executing Fedora script..."
     sudo scripts/install-packages-fedora.sh
