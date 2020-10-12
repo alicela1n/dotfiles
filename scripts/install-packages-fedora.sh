@@ -32,6 +32,7 @@ read -r -p "[Y/n] " input
 case $input in
     [yY][eE][sS]|[yY])
         sudo dnf install gnome-tweaks
+        break
     ;;
     [nN][oO]|[nN])
     echo "Skipping..."
