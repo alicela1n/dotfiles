@@ -6,7 +6,6 @@ gimp
 gimp-libs
 gnat-srpm-macros
 gnome-shell-extension-user-theme
-gnome-tweaks
 go-srpm-macros
 gpm-libs
 gstreamer1-libav
