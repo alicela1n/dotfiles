@@ -10,4 +10,7 @@ sudo scripts/install-packages.sh
 
 # Enabling services
 scripts/enable-services.sh
+
+# Set default shell to zsh
+scripts/set-default-to-zsh.sh
 echo "Done!"

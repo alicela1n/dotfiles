@@ -11,6 +11,9 @@ elif [[ $DIST == "manjaro" ]]; then
 elif [[ $DIST == "fedora" ]]; then
     echo "Executing Fedora script..."
     sudo scripts/install-packages-fedora.sh
+elif [[ $(uname -r) == "Darwin" ]]; then
+    echo "Executing macOS script..."
+    scripts/install-packages-macos.sh
 else
     echo "Unknown distro, install packages yourself"
 fi
