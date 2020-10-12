@@ -6,7 +6,7 @@ scripts/install-dotfiles.sh
 scripts/gnome-terminal.sh
 
 # Installing all packages
-scripts/install-packages.sh
+sudo scripts/install-packages.sh
 
 # Enabling services
 scripts/enable-services.sh

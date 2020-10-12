@@ -1,13 +1,10 @@
 #!/bin/bash
 echo "Installing packages..."
-DIST=$(awk '/^ID=/' /etc/*-release | awk -F'=' '{ print tolower($2) }')
 
-if [[ $DIST == "arch" ]]; then
-    echo 'Arch'
+if [[ 'which pacman' ]]; then
     sudo pacman -S $(cat packages/pacman)
-elif [[ $DIST == "fedora" ]]; then
-    echo "Executing Fedora script..."
-    sudo scripts/install-packages-fedora.sh
+elif [[ 'which dnf' ]]; then
+    sudo dnf install $(cat packages/dnf)
 else
-    echo "Unknown distro, install packages yourself"
+    echo "Unknown distro, skipping..."
 fi
