@@ -63,5 +63,5 @@ gcc
 make
 wimlib
 qbittorrent
-wireshark
+wireshark-qt
 firefox
