@@ -13,4 +13,4 @@ else
 fi
 
 brew install $(cat packages/homebrew)
-brew cask install ($cat packages/homebrew-cask)
+brew cask install $(cat packages/homebrew-cask)
