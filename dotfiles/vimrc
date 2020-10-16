@@ -1,24 +1,33 @@
-set number
-set linebreak
-set showbreak=+++
-set textwidth=100
-set showmatch
-set visualbell
-syntax on
+" I finally learned to love vim
 
-set hlsearch
-set smartcase
-set ignorecase
-set incsearch
+" General
+set history=500                     " Set history in VIM to 500
+set number                          " Show line numbers (shown on side)
+syntax on                           " Syntax highlighting is fun and makes this usable as an editor
+set linebreak                       " Set linebreak to prevent words from being split across lines
+set showbreak=+++                   " Show line breaks with +++
+set showmatch                       " Highlight matching brace
+set ruler                           " Show row and column ruler info
+set undolevels=1000                 " Number of undo levels
+set backspace=indent,eol,start      " Backspace behavior
 
-set autoindent
-set expandtab
-set shiftwidth=4
-set smartindent
-set smarttab
-set softtabstop=4
+" Copy and paste behavior
+set clipboard=unnamedplus           " Use system clipboard
+vmap <C-c> "+yi                     " Copy and paste shortcut for gvim
+vmap <C-x> "+c                      " Copy and paste shortcut for gvim  
+vmap <C-v> c<ESC>"+p                " Copy and paste shortcut for gvim     
+imap <C-v> <ESC>"+pa                " Copy and paste shortcut for gvim
 
-set ruler
-set undolevels=1000
-set backspace=indent,eol,start
-set clipboard=unnamedplus
+" Searching
+set hlsearch                        " Highlight all search results
+set smartcase                       " Enable smart-case search
+set ignorecase                      " Case insensitive searching
+set incsearch                       " Searches for strings incrementally 
+
+" Indenting 
+set autoindent                      " Automatically indent new lines
+set expandtab                       " Use spaces instead of tabs
+set shiftwidth=4                    " Number of auto-indent spaces
+set smartindent                     " Enable smart indent
+set smarttab                        " Enable smart tab
+set softtabstop=4                   " Number of spaces per tab
