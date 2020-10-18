@@ -11,7 +11,7 @@ bindkey -e
 zstyle :compinstall filename '~/.zshrc'
 
 ### PROMPT
-PROMPT='%F{111}%n%f :: %F{46}%m%f [%B%F{177}%5~%f] %F{104}%# '
+PROMPT='%F{111}%n%f :: %F{46}%m%f %B[%F{177}%5~%f] %F{104}%# '
 
 ### Git integration
 autoload -Uz vcs_info
