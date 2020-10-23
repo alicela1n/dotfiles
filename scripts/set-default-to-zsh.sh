@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 echo "Setting default shell to zsh..."
 
 # Fedora doesn't have chsh for some reason

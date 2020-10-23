@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 echo "Installing dotfiles..."
 scripts/install-dotfiles.sh
 

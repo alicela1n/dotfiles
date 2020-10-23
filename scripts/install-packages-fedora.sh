@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 echo "Configuring dnf..."
 cat fedora/etc/dnf/dnf.conf > /etc/dnf/dnf.conf
 echo "Enabling rpmfusion..."

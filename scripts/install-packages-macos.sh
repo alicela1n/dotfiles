@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 echo "Installing homebrew..."
 if [ ! -f /usr/local/bin/brew ]; then

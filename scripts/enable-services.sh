@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 if [[ $(uname -s) == "Linux" ]]; then # assumes systemd
     echo "Enabling services..."
     sudo systemctl enable --now libvirtd

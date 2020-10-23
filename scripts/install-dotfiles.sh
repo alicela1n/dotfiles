@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 git submodule update --init --depth 1
 cp -v dotfiles/tmux.conf ~/.tmux.conf
 cp -v dotfiles/vimrc ~/.vimrc

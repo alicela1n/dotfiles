@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 echo "Installing packages..."
 DIST=$(awk '/^ID=/' /etc/*-release | awk -F'=' '{ print tolower($2) }')
 
