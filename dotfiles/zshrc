@@ -1,13 +1,8 @@
 ### Things that will be used by zsh 
-source ~/.zsh/zshprompt
-source ~/.zsh/aliases
-source ~/.zsh/history
-
-### Auto Completions
-zstyle :compinstall filename '~/.zshrc'
-autoload -Uz compinit
-compinit
-
+source ~/.zsh/zshprompt   # ZSH prompt
+source ~/.zsh/aliases     # aliases
+source ~/.zsh/history     # Configuring history
+source ~/.zsh/completions # Configuring zsh completions
 ### Plugins go here
 fpath=(~/.zsh/zsh-completions/src $fpath)
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
