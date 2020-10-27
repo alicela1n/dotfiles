@@ -1,0 +1,6 @@
+### Configuring zsh history
+HISTFILE=~/.zsh/histfile # History file for zsh
+HISTSIZE=1000
+SAVEHIST=1000
+setopt appendhistory autocd
+bindkey -e

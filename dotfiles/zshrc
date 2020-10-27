@@ -1,44 +1,14 @@
-##### Beginning of config
-
-### Configuring zsh history
-HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
-setopt appendhistory autocd
-bindkey -e
-# End of lines configured by zsh-newuser-install
-# The following lines were added by compinstall
-zstyle :compinstall filename '~/.zshrc'
-
-### PROMPT
-PROMPT='%F{111}%n%f :: %F{46}%m%f %B[%F{177}%5~%f] %F{104}%# '
-
-### Git integration
-autoload -Uz vcs_info
-precmd_vcs_info() { vcs_info }
-precmd_functions+=( precmd_vcs_info )
-setopt prompt_subst
-RPROMPT=\$vcs_info_msg_0_
-zstyle ':vcs_info:git:*' formats '%F{99}(%b)%r%f'
-zstyle ':vcs_info:*' enable git
+### Things that will be used by zsh 
+source ~/.zsh/zshprompt
+source ~/.zsh/aliases
+source ~/.zsh/history
 
 ### Auto Completions
+zstyle :compinstall filename '~/.zshrc'
 autoload -Uz compinit
 compinit
 
-### Setting Environment variables
-export LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 # Sets language variables
-export PATH=$PATH:$HOME/.local/bin:$HOME/.gem/ruby/2.7.0/bin # Sets path variable
-export EDITOR=vim # Default editor, mine is vim
-
-### Aliases
-alias refresh="source ~/.zshrc" # Refresh the zsh session after a config change
-alias l="ls -lah" # Aliasing l to ls -lah because it's less typing
-alias c="clear" # Aliasing clear to c because it's less typing
-alias pma="cd ~/.local/var/pmbootstrap/cache_git/pmaports" # Aliasing pma to enter postmarketOS aports directory
-alias config_zsh="$EDITOR ~/.zshrc" # Open the zsh config in an editor
-
-### Plugins go here, these need to be cloned separately and put in ~/.zsh, remove these lines if you don't use these plugins
+### Plugins go here
 fpath=(~/.zsh/zsh-completions/src $fpath)
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
