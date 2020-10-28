@@ -7,4 +7,4 @@ cp -vr dotfiles/zsh ~/.zsh
 cp -r dotfiles/zshenv ~/.zshenv
 cp -r dotfiles/zshrc ~/.zshrc
 mkdir -p ~/.config/nvim
-cp -vr config/nvim ~/.config/nvim
+cp -vr dotfiles/config/nvim ~/.config/nvim
