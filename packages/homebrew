@@ -27,3 +27,6 @@ mdf2iso
 telnet
 telnetd
 aria2
+node
+nvim
+yarn
