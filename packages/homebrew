@@ -28,5 +28,5 @@ telnet
 telnetd
 aria2
 node
-nvim
+neovim
 yarn

@@ -14,6 +14,7 @@ sudo wget https://fedorapeople.org/groups/virt/virtio-win/virtio-win.repo \
   -O /etc/yum.repos.d/virtio-win.repo
 curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo
 curl --silent --location https://rpm.nodesource.com/setup_12.x | sudo bash -
+yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 # Update and install everything
 sudo dnf update -y
 sudo dnf groupupdate core -y

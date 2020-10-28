@@ -42,5 +42,6 @@ android-tools
 wireshark
 qbittorrent
 aria2
-nvim
+neovim
+python36-neovim
 yarn
