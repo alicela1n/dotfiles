@@ -9,3 +9,8 @@ cp -r dotfiles/zshenv ~/.zshenv
 cp -r dotfiles/zshrc ~/.zshrc
 mkdir -p ~/.config
 cp -vr dotfiles/config/* ~/.config/
+if [ $(whoami) == lyra ]; then
+    cp -vr dotfiles/gitconfig ~/.gitconfig
+elif [ $(whoami) == lyra64 ]; then
+    cp -vr dotfiles/gitconfig ~/.gitconfig
+fi
