@@ -44,3 +44,4 @@ defaults write com.apple.finder SidebarSharedSectionDisclosedState -bool true
 
 echo "Making the dock smaller..."
 defaults write com.apple.dock tilesize -int 30
+killall Dock
