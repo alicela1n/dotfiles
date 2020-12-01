@@ -164,8 +164,8 @@ colors:
   # Default colors
   primary:
     #background: '#1d1f21'
-    background: '#ffebfc'
-    foreground: '#ff00d8'
+    background: '#5a5475'
+    foreground: '#f8f8f2'
 
     # Bright and dim foreground colors
     #
@@ -222,25 +222,24 @@ colors:
 
   # Normal colors
   normal:
-    black:   '#1d1f21'
-    red:     '#cc6666'
-    green:   '#b5bd68'
-    yellow:  '#f0c674'
-    blue:    '#81a2be'
-    magenta: '#b294bb'
-    cyan:    '#8abeb7'
-    white:   '#c5c8c6'
-
+    black: '#3b3a32'
+    red: '#f1756f'
+    green: '#6de874'
+    yellow: '#e6c000'
+    blue: '#a381ff'
+    magenta: '#ff87b1'
+    cyan: '#7ef5b8'
+    white: '#c7b7c7'
   # Bright colors
   bright:
-    black:   '#666666'
-    red:     '#d54e53'
-    green:   '#b9ca4a'
-    yellow:  '#e7c547'
-    blue:    '#7aa6da'
-    magenta: '#c397d8'
-    cyan:    '#70c0b1'
-    white:   '#eaeaea'
+    black: '#685868'
+    red: '#ff9f9a'
+    green: '#7bfa81'
+    yellow: '#ffea00'
+    blue: '#c5a3ff'
+    magenta: '#ffb8d1'
+    cyan: '#c2ffdf'
+    white: '#ffefff'
 
   # Dim colors
   #
@@ -311,7 +310,7 @@ colors:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.96
+background_opacity: 1.0
 
 
 #selection:
@@ -323,15 +322,16 @@ background_opacity: 0.96
 # Allow terminal applications to change Alacritty's window title.
 #dynamic_title: true
 
-#cursor:
+cursor:
   # Cursor style
   #
   # Values for `style`:
   #   - ▇ Block
   #   - _ Underline
   #   - | Beam
-  #style: Block
-
+  style: Block
+  text: '#f8f8f2'
+  cursor: '#c7b7c7'
   # Vi mode cursor style
   #
   # If the vi mode cursor style is `None` or not specified, it will fall back to
