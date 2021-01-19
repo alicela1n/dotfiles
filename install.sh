@@ -13,7 +13,7 @@ scripts/set-default-to-zsh.sh
 echo "Done!"
 
 # Configuring macOS
-echo "macOS detected, running configure script..."
 if [[ $(uname -s) == "Darwin" ]]; then
+    echo "macOS detected, running configure script..."
     scripts/configure_macos_defaults.sh
 fi

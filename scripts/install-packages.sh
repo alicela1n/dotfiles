@@ -16,4 +16,22 @@ elif [[ $(uname -s) == "Darwin" ]]; then
     scripts/install-packages-macos.sh
 else
     echo "Unknown distro, install packages yourself"
+    echo "Want to install the flatpaks? Requires flatpak."
+    while true
+    do
+    read -r -p "[Y/n] " input
+    case $input in
+        [yY][eE][sS]|[yY])
+            flatpak install $(cat packages/flatpak)
+            break
+        ;;
+        [nN][oO]|[nN])
+        echo "Skipping..."
+        break
+        ;;
+        *)
+        echo "Invalid input..."
+        ;;
+    esac
+    done
 fi
