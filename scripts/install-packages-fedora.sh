@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+echo "Notice! Unmaintained unless I start using Fedora again"
 echo "Configuring dnf..."
 cat fedora/etc/dnf/dnf.conf > /etc/dnf/dnf.conf
 echo "Enabling rpmfusion..."
