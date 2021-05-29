@@ -53,6 +53,15 @@ alias airl="sudo rm /var/lib/apt/lists/lock; sudo rm /var/lib/dpkg/lock; sudo rm
 alias af="apt-file list"
 alias afs="apt-file search"
 
+# Emerge aliases (Gentoo)
+alias emerchu="sudo emerge" # Just for fun
+alias ema="sudo emerge --ask" # Emerge a package with --ask
+alias emd="sudo emerge --deselect" # Remove a package from world
+alias emu="sudo emerge -avuDN @world" # Update @world with --ask --verbose --update --deep --newuse
+alias ems="sudo emerge --search" # Search for a package
+alias emsy="sudo emerge --sync" # Sync portage tree
+alias emdc="sudo emerge --depclean" # Clean dependencies
+
 # Aliases for git
 alias gs='git status'
 alias ga='git add'
