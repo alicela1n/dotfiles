@@ -6,7 +6,7 @@ alias cls="clear" # Incase I accidentally type cls
 alias config_zsh="$EDITOR ~/.zshrc" # Open the zsh config in an editor
 
 # Vim aliases
-if [[ "nvim -v &> /dev/null" ]]
+if [[ "command -v nvim &> /dev/null" ]]
 then
     alias vim="nvim"
     alias vi="nvim"
