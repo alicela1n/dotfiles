@@ -6,10 +6,17 @@ alias cls="clear" # Incase I accidentally type cls
 alias config_zsh="$EDITOR ~/.zshrc" # Open the zsh config in an editor
 
 # Vim aliases
-alias vim="nvim"
-alias vi="nvim"
-alias suvi="sudo nvim"  # Start neovim as root
-alias suvim="sudo nvim" # Start neovim as root
+if [[ "nvim -v &> /dev/null" ]]
+then
+    alias vim="nvim"
+    alias vi="nvim"
+    alias suvi="sudo nvim"  # Start neovim as root
+    alias suvim="sudo nvim" # Start neovim as root
+else
+    alias vi="vim"
+    alias suvi="sudo vim"
+    alias suvim="sudo vim"
+fi
 
 # Folder Aliases
 alias pma="cd ~/.local/var/pmbootstrap/cache_git/pmaports" # Aliasing pma to enter postmarketOS aports directory
