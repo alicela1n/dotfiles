@@ -19,7 +19,7 @@ alias downloads="cd ~/Downloads"
 alias code="cd ~/code"
 alias data="cd ~/data"
 
-# Paru aliases
+# Paru aliases (Arch Linux)
 alias pas="paru -Ss" # Search pacman and AUR repositories
 alias paf="paru -Ql" # Show what files a package has installed
 alias pai="paru -S"  # Install
@@ -28,6 +28,30 @@ alias parr="paru -Rs" # Remove package and unused dependencies
 alias parc="paru -Sc" # Clean pacman cache
 alias parcc="paru -Scc" # Clean whole pacman cache
 alias parl="rm /var/lib/pacman/db.lck" # Remove pacman lock
+
+# Pacman aliases (Arch Linux)
+alias pacs="pacman -Ss" # Search pacman
+alias pacf="pacman -Ql" # Show what files a package has installed
+alias paci="sudo pacman -S" # Install
+alias pacr="sudo pacman -R" # Remove
+alias pacrr="sudo pacman -Rs" # Remove package and unused dependencies
+alias pacrc="sudo pacman -Sc" # Clean package cache
+alias pacrcc="sudo pacman -Scc" # Clean whole pacman cache
+alias parl="rm /var/lib/pacman/db.lck" # Remove pacman lock
+
+# Apt aliases (Ubuntu/Debian)
+alias ais="apt search" # Search database for packages
+alias ain="sudo apt install" # Install
+alias aps="apt show" # Show info about a package
+alias air="sudo apt remove" # Remove a package
+alias aip="sudo apt purge" # Purge a package and config files
+alias au="sudo apt update" # Refresh repos
+alias aiu="sudo apt update; sudo apt install" #  Refresh repos and install
+alias airl="sudo rm /var/lib/apt/lists/lock; sudo rm /var/lib/dpkg/lock; sudo rm /var/lib/dpkg/lock-frontend; sudo rm /var/cache/apt/archives/lock"
+
+# Apt-file aliases (Ubuntu/Debian)
+alias af="apt-file list"
+alias afs="apt-file search"
 
 # Aliases for git
 alias gs='git status'

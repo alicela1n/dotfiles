@@ -6,7 +6,6 @@ if [[ $(uname -s) == "Linux" ]];
         sudo systemctl enable --now libvirtd
     else
         "unknown init system"
-    fi
-elif [[ $(uname -s) == "Darwin" ]]; then
+    elif [[ $(uname -s) == "Darwin" ]]; then
     echo "Nothing to enable atm"
 fi

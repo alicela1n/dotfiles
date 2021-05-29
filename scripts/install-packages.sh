@@ -9,6 +9,7 @@ elif [[ $DIST == "manjaro" ]]; then
     echo 'Installing packages for Manjaro'
     sudo pacman -Syu $(cat packages/pacman)
 elif [[ $DIST == "fedora" ]]; then
+    echo "Notice! Unmaintained unless I start using Fedora again"
     echo "Executing Fedora script..."
     sudo scripts/install-packages-fedora.sh
 elif [[ $(uname -s) == "Darwin" ]]; then
