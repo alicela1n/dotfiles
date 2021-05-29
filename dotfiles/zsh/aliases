@@ -1,7 +1,50 @@
 ### Aliases
-alias dotfiles="cd ~/code/dotfiles" # Goto dotfiles repo
 alias refresh="exec zsh --login" # Refresh the zsh session after a config change
 alias l="ls -lah" # Aliasing l to ls -lah because it's less typing
 alias c="clear" # Aliasing clear to c because it's less typing
-alias pma="cd ~/.local/var/pmbootstrap/cache_git/pmaports" # Aliasing pma to enter postmarketOS aports directory
+alias cls="clear" # Incase I accidentally type cls
 alias config_zsh="$EDITOR ~/.zshrc" # Open the zsh config in an editor
+
+# Vim aliases
+alias vim="nvim"
+alias vi="nvim"
+alias suvi="sudo nvim"  # Start neovim as root
+alias suvim="sudo nvim" # Start neovim as root
+
+# Folder Aliases
+alias pma="cd ~/.local/var/pmbootstrap/cache_git/pmaports" # Aliasing pma to enter postmarketOS aports directory
+alias dotfiles="cd ~/code/dotfiles" # Goto dotfiles repo
+alias docs="cd ~/Documents"
+alias downloads="cd ~/Downloads"
+alias code="cd ~/code"
+alias data="cd ~/data"
+
+# Paru aliases
+alias pas="paru -Ss" # Search pacman and AUR repositories
+alias paf="paru -Ql" # Show what files a package has installed
+alias pai="paru -S"  # Install
+alias par="paru -R"  # Remove package but not dependencies
+alias parr="paru -Rs" # Remove package and unused dependencies
+alias parc="paru -Sc" # Clean pacman cache
+alias parcc="paru -Scc" # Clean whole pacman cache
+alias parl="rm /var/lib/pacman/db.lck" # Remove pacman lock
+
+# Aliases for git
+alias gs='git status'
+alias ga='git add'
+alias gp='git push'
+alias gpo='git push origin'
+alias gtd='git tag --delete' 
+alias gtdr='git tag --delete origin'
+alias gr='git branch -r'
+alias gplo='git pull origin'
+alias gb='git branch '
+alias gc='git commit'
+alias gd='git diff'
+alias gco='git checkout '
+alias gl='git log'
+alias gr='git remote'
+alias grs='git remote show'
+alias glo='git log --pretty="oneline"'
+alias glol='git log --graph --oneline --decorate'
+
