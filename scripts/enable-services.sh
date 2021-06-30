@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-if [[ "$(uname -s)" == "Linux" ]]; then
-    if [[ "$(file /sbin/init)" == "/sbin/init: symbolic link to ../lib/systemd/systemd" ]]; then
-        printf "Systemd detected\n"
-        printf "Enabling services...\n"
+if [[ $(uname -s) == "Linux" ]]; then
+    if [[ $(file /sbin/init) == "/sbin/init: symbolic link to /lib/systemd/systemd" ]]; then
+        echo "Systemd detected"
+        echo "Enabling services..."
         sudo systemctl enable --now libvirtd
-    elif [[ "$(file /sbin/init)" == "/sbin/init: symbolic link to /lib/systemd/systemd" ]]; then
+    elif [[ "$(file /sbin/init)" == "/sbin/init: symbolic link to ../lib/systemd/systemd" ]]; then
         printf "Systemd detected\n"
         printf "Enabling services...\n"
         sudo systemctl enable --now libvirtd

@@ -72,10 +72,6 @@ set backspace=indent,eol,start      " Backspace behavior
 
 " Copy and paste behavior
 set clipboard=unnamedplus           " Use system clipboard
-vmap <C-c> "+yi                     " Copy and paste shortcut for gvim
-vmap <C-x> "+c                      " Copy and paste shortcut for gvim  
-vmap <C-v> c<ESC>"+p                " Copy and paste shortcut for gvim     
-imap <C-v> <ESC>"+pa                " Copy and paste shortcut for gvim
 
 " Searching
 set hlsearch                        " Highlight all search results
