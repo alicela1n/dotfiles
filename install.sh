@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
+# Make sure dotfiles repo is up to date
+git pull
+
+echo "Making all directories in home"
+scripts/make-directories.sh
+
 echo "Installing dotfiles..."
 scripts/install-dotfiles.sh
 
