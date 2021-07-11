@@ -5,7 +5,7 @@ echo "Setting default shell to zsh..."
 DIST=$(awk '/^ID=/' /etc/*-release | awk -F'=' '{ print tolower($2) }')
 
 if [[ $DIST = "fedora" ]]; then
-    sudo usermod -s $(which zsh) $USER
+    sudo usermod -s "$(which zsh)" $USER
 else
-    chsh -s $(which zsh)
+    chsh -s "$(which zsh)"
 fi
