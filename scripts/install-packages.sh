@@ -4,7 +4,7 @@ echo "Installing packages..."
 arch() {
     echo 'Installing packages for Arch...'
     echo "This script implies that you use KDE Plasma, as such will pull in certain KDE applications and dependencies I use, you have been warned!"
-    sudo pacman -Syu "$(cat packages/pacman)"
+    sudo pacman -Syu "$(< packages/pacman)"
 }
 
 flatpak() {
