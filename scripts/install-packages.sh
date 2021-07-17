@@ -1,32 +1,10 @@
 #!/usr/bin/env bash
 echo "Installing packages..."
-
-arch() {
-    echo 'Installing packages for Arch...'
-    echo "This script implies that you use KDE Plasma, as such will pull in certain KDE applications and dependencies I use, you have been warned!"
-    sudo pacman -Syu "$(< packages/pacman)"
-}
-
 flatpak() {
     if [[ -f /usr/bin/flatpak ]]; then
-        echo "Want to install the flatpaks? Requires flatpak."
-        while true
-        do
-        read -r -p "[Y/n] " input
-        case $input in
-            [yY][eE][sS]|[yY])
-                flatpak install "$(cat packages/flatpak)"
-                break
-            ;;
-            [nN][oO]|[nN])
-            echo "Skipping..."
-            break
-            ;;
-            *)
-            echo "Invalid input..."
-            ;;
-        esac
-        done
+            # Add remote repository
+            flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+            flatpak install "$(cat packages/flatpak)"
     fi
 }
 
@@ -35,12 +13,11 @@ unknown_distro() {
 }
 
 if [[ -f /usr/bin/pacman ]]; then
-    arch
+    sudo pacman -Syu $(cat packages/pacman)
     flatpak
 elif [[ $(uname -s) == "Darwin" ]]; then
     echo "Executing macOS script..."
     scripts/install-packages-macos.sh
 else
     unknown_distro
-    flatpak
 fi

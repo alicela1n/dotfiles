@@ -20,7 +20,6 @@ cmake
 colordiff
 debian-archive-keyring
 debootstrap
-discord
 dnsmasq
 dmidecode
 docker
@@ -31,7 +30,6 @@ dosfstools
 doxygen
 dvd+rw-tools
 ebtables
-element-desktop
 emacs
 edk2-ovmf
 firefox
@@ -46,7 +44,6 @@ gnome-disk-utility
 gnu-free-fonts
 gptfdisk
 gparted
-hexchat
 hplip
 htop
 inetutils
@@ -81,7 +78,6 @@ qbittorrent
 qemu
 qemu-arch-extra
 rosegarden
-telegram-desktop
 tmux
 ttf-anonymous-pro
 ttf-dejavu
