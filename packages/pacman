@@ -91,6 +91,7 @@ qemu
 qemu-arch-extra
 rosegarden
 tmux
+toolbox
 transmission-qt
 ttf-anonymous-pro
 ttf-dejavu
