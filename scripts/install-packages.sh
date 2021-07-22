@@ -13,7 +13,7 @@ unknown_distro() {
 }
 
 if [[ -f /usr/bin/pacman ]]; then
-    sudo pacman -Syu $(cat packages/pacman)
+    sudo pacman -Syu --needed $(cat packages/pacman)
     flatpak
 elif [[ $(uname -s) == "Darwin" ]]; then
     echo "Executing macOS script..."
