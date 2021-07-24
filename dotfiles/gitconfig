@@ -1,3 +1,7 @@
 [user]
 	email = quarkyalice@disroot.org
 	name = Alice
+[color]
+	ui = auto
+[core]
+	editor = vim
