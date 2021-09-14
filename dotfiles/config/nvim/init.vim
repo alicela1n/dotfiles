@@ -83,6 +83,6 @@ set incsearch                       " Searches for strings incrementally
 set autoindent                      " Automatically indent new lines
 set expandtab                       " Use spaces instead of tabs
 set shiftwidth=4                    " Number of auto-indent spaces
-set smartindent                     " Enable smart indent
+filetype plugin indent on           " File type based indention
 set smarttab                        " Enable smart tab
 set softtabstop=4                   " Number of spaces per tab
