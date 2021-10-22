@@ -18,12 +18,14 @@ aria2
 base-devel
 binwalk
 cabextract
+ccache
 cdrtools
 cmake
 colordiff
 darktable
 debian-archive-keyring
 debootstrap
+discord
 dnsmasq
 dmidecode
 docker
@@ -33,11 +35,10 @@ dosbox
 dosfstools
 doxygen
 dvd+rw-tools
-ebtables
+element-desktop
 emacs
 edk2-ovmf
 firefox
-firefox-developer-edition
 flashrom
 flatpak
 freerdp
@@ -51,6 +52,7 @@ gnu-free-fonts
 gptfdisk
 gparted
 hexchat
+higan
 hplip
 htop
 hunspell
@@ -81,6 +83,7 @@ mono
 nasm
 neofetch
 neovim
+ninja
 nodejs
 noto-fonts
 noto-fonts-emoji
@@ -91,6 +94,7 @@ pkgfile
 qemu
 qemu-arch-extra
 rosegarden
+telegram-desktop
 tmux
 toolbox
 transmission-qt
@@ -107,6 +111,7 @@ ubuntu-keyring
 usbutils
 vagrant
 virt-manager
+vlc
 wgetpaste
 wimlib
 wireshark-qt

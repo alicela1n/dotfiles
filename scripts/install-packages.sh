@@ -1,23 +1,18 @@
 #!/usr/bin/env bash
 echo "Installing packages..."
-flatpak() {
-    if [[ -f /usr/bin/flatpak ]]; then
-            # Add remote repository
-            flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-            flatpak install "$(cat packages/flatpak)"
-    fi
-}
-
-unknown_distro() {
-    echo "Distro is unknown, can't install packages"
-}
-
 if [[ -f /usr/bin/pacman ]]; then
     sudo pacman -Syu --needed $(cat packages/pacman)
-    flatpak
+    mkdir -p ~/code/aur
+    echo "Instaling AUR helper paru-bin..."
+    git clone https://aur.archlinux.org/paru-bin.git ~/code/aur/paru-bin
+    pushd ~/code/aur/paru-bin > /dev/null
+    makepkg -si
+    popd > /dev/null
+    echo "Installing AUR packages..."
+    paru --sudoloop -S $(cat packages/aur)
 elif [[ $(uname -s) == "Darwin" ]]; then
     echo "Executing macOS script..."
     scripts/install-packages-macos.sh
 else
-    unknown_distro
+    echo "Unknown distro!"
 fi
