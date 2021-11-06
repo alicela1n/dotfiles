@@ -19,6 +19,7 @@ alias paf="paru -Ql" # Show what files a package has installed
 alias pai="paru -S"  # Install
 alias par="paru -R"  # Remove package but not dependencies
 alias parr="paru -Rs" # Remove package and unused dependencies
+alias parrc="paru -Runsc" # Completely remove a package and any dependencies
 alias parc="paru -Sc" # Clean pacman cache
 alias parcc="paru -Scc" # Clean whole pacman cache
 alias parl="rm /var/lib/pacman/db.lck" # Remove pacman lock
