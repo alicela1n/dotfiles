@@ -8,7 +8,10 @@ scripts/make-directories.sh
 echo "Installing dotfiles..."
 scripts/install-dotfiles.sh
 
-# Installing all packages
+echo "Installing configurations in /etc"
+scripts/install-etc-configs.sh
+
+echo "Installing all packages..."
 scripts/install-packages.sh
 
 # Enabling services
