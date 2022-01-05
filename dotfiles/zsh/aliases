@@ -4,6 +4,8 @@ alias l="ls -lah" # Aliasing l to ls -lah because it's less typing
 alias c="clear" # Aliasing clear to c because it's less typing
 alias cls="clear" # Incase I accidentally type cls
 alias config_zsh="$EDITOR ~/.zshrc" # Open the zsh config in an editor
+alias vscode="/usr/bin/code" # Open in vscode
+alias edit="$EDITOR" # Edit a file
 
 # Folder Aliases
 alias pma="cd ~/.local/var/pmbootstrap/cache_git/pmaports" # Aliasing pma to enter postmarketOS aports directory
