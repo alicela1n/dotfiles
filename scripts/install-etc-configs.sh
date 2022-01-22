@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-    if [[ -f /usr/bin/pacman ]]; then
+if [[ -f /usr/bin/pacman ]]; then
     echo "Installing pacman configuration..."
     sudo cp -v /etc/pacman.conf /etc/pacman.conf.BACKUP
     sudo cp -v etc/pacman.conf /etc/pacman.conf
