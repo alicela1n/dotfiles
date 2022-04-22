@@ -4,12 +4,33 @@ if [[ -f ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme ]]; then
     # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
     [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 else
-    source ~/.zsh/zshprompt   # Use my own ZSH prompt
+    ### PROMPT
+    PROMPT='%F{111}%n%f :: %F{46}%m%f %B[%F{177}%5~%f] %F{104}%# '
+
+    ### Git integration
+    autoload -Uz vcs_info
+    precmd_vcs_info() { vcs_info }
+    precmd_functions+=( precmd_vcs_info )
+    setopt prompt_subst
+    RPROMPT=\$vcs_info_msg_0_
+    zstyle ':vcs_info:git:*' formats '%F{99}(%b)%r%f'
+    zstyle ':vcs_info:*' enable git
 fi
 
+### Configuring zsh history
+HISTFILE=~/.zsh/histfile # History file for zsh
+HISTSIZE=1000
+SAVEHIST=1000
+setopt appendhistory autocd
+bindkey -e
+
+### Auto Completions
+zstyle :compinstall filename '~/.zshrc'
+autoload -Uz compinit
+compinit
+
+
 source ~/.zsh/aliases     # aliases
-source ~/.zsh/history     # Configuring history
-source ~/.zsh/completions # Configuring zsh completions
 ### Plugins go here
 fpath=(~/.zsh/zsh-completions/src $fpath)
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -18,8 +39,7 @@ if [[ -f /usr/share/doc/pkgfile/command-not-found.zsh ]]; then
     source /usr/share/doc/pkgfile/command-not-found.zsh
 fi
 
-# Stuff for building Android
-ccache -M 50G > /dev/null
-ccache -o compression=true
-export ANDROID_JACK_VM_ARGS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4G"
-
+# Functions
+stfu () {
+        "$@" &> /dev/null < /dev/null &
+}

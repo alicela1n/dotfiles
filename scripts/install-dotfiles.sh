@@ -11,6 +11,4 @@ mkdir -p ~/.config
 cp -vr dotfiles/config/* ~/.config/
 if [ "$(whoami)" == alice ]; then
     cp -vr dotfiles/gitconfig ~/.gitconfig
-elif [ "$(whoami)" == lyra ]; then
-    cp -vr dotfiles/gitconfig ~/.gitconfig
 fi

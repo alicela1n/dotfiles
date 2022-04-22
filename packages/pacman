@@ -93,6 +93,7 @@ openssh
 pkgfile
 qemu
 qemu-arch-extra
+ripgrep
 rosegarden
 telegram-desktop
 tmux

@@ -1,5 +1,0 @@
-### Auto Completions
-zstyle :compinstall filename '~/.zshrc'
-autoload -Uz compinit
-compinit
-
