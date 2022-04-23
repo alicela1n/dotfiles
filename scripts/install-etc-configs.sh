@@ -8,3 +8,5 @@ if [[ -f /usr/bin/pacman ]]; then
     sudo cp -v /etc/paru.conf /etc/paru.conf.BACKUP
     sudo cp -v etc/paru.conf /etc/paru.conf
 fi
+sudo mkdir -pv /etc/profile.d
+sudo cp -v etc/profile.d/* /etc/profile.d

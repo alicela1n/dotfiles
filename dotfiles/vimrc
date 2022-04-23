@@ -1,5 +1,3 @@
-" I finally learned to love vim
-
 " General
 set history=500                     " Set history in VIM to 500
 set number                          " Show line numbers (shown on side)

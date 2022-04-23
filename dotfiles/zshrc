@@ -6,6 +6,8 @@ if [[ -f ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme ]]; then
 else
     ### PROMPT
     PROMPT='%F{111}%n%f :: %F{46}%m%f %B[%F{177}%5~%f] %F{104}%# '
+    # Alternative Prompt
+    # PROMPT='%F{111}%n%f@%F{46}%m%f %B%F{177}%5~%f %F{104}%# '
 
     ### Git integration
     autoload -Uz vcs_info
