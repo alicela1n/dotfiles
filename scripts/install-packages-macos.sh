@@ -8,5 +8,5 @@ else
     echo "Homebrew already installed, skipping..."
 fi
 
-brew install "$(< packages/homebrew)"
-brew install --cask "$(< packages/homebrew-cask)"
+cat packages/homebrew | xargs brew install
+cat packages/homebrew-cask | xargs brew install --cask
