@@ -1,5 +1,4 @@
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
-
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
 # set by alacritty itself.
@@ -96,7 +95,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: monospace
+    family: Hack NF
 
     # The `style` can be specified to pick a specific face.
     style: Regular
@@ -107,7 +106,7 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: monospace
+    family: Hack NF
 
     # The `style` can be specified to pick a specific face.
     style: Bold
@@ -118,7 +117,7 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: monospace
+    family: Hack NF
 
     # The `style` can be specified to pick a specific face.
     style: Italic
@@ -129,13 +128,13 @@ font:
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: monospace
+    family: Hack NF
 
     # The `style` can be specified to pick a specific face.
     style: Bold Italic
 
   # Point size
-  size: 9.0
+  size: 10.0
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -159,158 +158,42 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 #draw_bold_text_with_bright_colors: false
 
-# Colors (Tomorrow Night)
+# Colors (Neon)
 colors:
-  # Default colors
-  primary:
-    #background: '#1d1f21'
-    background: '#5a5475'
-    foreground: '#f8f8f2'
-
-    # Bright and dim foreground colors
-    #
-    # The dimmed foreground color is calculated automatically if it is not present.
-    # If the bright foreground color is not set, or `draw_bold_text_with_bright_colors`
-    # is `false`, the normal foreground color will be used.
-    #dim_foreground: '#828482'
-    #bright_foreground: '#eaeaea'
-
-  # Cursor colors
-  #
-  # Colors which should be used to draw the terminal cursor.
-  #
-  # Allowed values are CellForeground and CellBackground, which reference the
-  # affected cell, or hexadecimal colors like #ff00ff.
-  #cursor:
-  #  text: CellBackground
-  #  cursor: CellForeground
-
-  # Vi mode cursor colors
-  #
-  # Colors for the cursor when the vi mode is active.
-  #
-  # Allowed values are CellForeground and CellBackground, which reference the
-  # affected cell, or hexadecimal colors like #ff00ff.
-  #vi_mode_cursor:
-  #  text: CellBackground
-  #  cursor: CellForeground
-
-  # Selection colors
-  #
-  # Colors which should be used to draw the selection area.
-  #
-  # Allowed values are CellForeground and CellBackground, which reference the
-  # affected cell, or hexadecimal colors like #ff00ff.
-  #selection:
-  #  text: CellBackground
-  #  background: CellForeground
-
-  # Search colors
-  #
-  # Colors used for the search bar and match highlighting.
-  #
-  # Allowed values are CellForeground and CellBackground, which reference the
-  # affected cell, or hexadecimal colors like #ff00ff.
-  search:
-    matches:
-      foreground: '#000000'
-      background: '#ffffff'
-  #
-  # bar:
-  #   background: CellForeground
-  #   foreground: CellBackground
-
-  # Normal colors
-  normal:
-    black: '#3b3a32'
-    red: '#f1756f'
-    green: '#6de874'
-    yellow: '#e6c000'
-    blue: '#a381ff'
-    magenta: '#ff87b1'
-    cyan: '#7ef5b8'
-    white: '#c7b7c7'
-  # Bright colors
   bright:
-    black: '#685868'
-    red: '#ff9f9a'
-    green: '#7bfa81'
-    yellow: '#ffea00'
-    blue: '#c5a3ff'
-    magenta: '#ffb8d1'
-    cyan: '#c2ffdf'
-    white: '#ffefff'
+    black: '#686868'
+    blue: '#3c40cb'
+    cyan: '#88fffe'
+    green: '#75ff88'
+    magenta: '#f15be5'
+    red: '#ff5a5a'
+    white: '#ffffff'
+    yellow: '#fffd96'
+  cursor:
+    cursor: '#c7c7c7'
+    text: '#ffffff'
+  normal:
+    black: '#000000'
+    blue: '#0208cb'
+    cyan: '#00fffc'
+    green: '#5ffa74'
+    magenta: '#f924e7'
+    red: '#ff3045'
+    white: '#c7c7c7'
+    yellow: '#fffc7e'
+  primary:
+    background: '#14161a'
+    foreground: '#00fffc'
+  selection:
+    background: '#0013ff'
+    text: '#08d2cf'
 
-  # Dim colors
-  #
-  # If the dim colors are not set, they will be calculated automatically based
-  # on the `normal` colors.
-  dim:
-    black:   '#131415'
-    red:     '#864343'
-    green:   '#777c44'
-    yellow:  '#9e824c'
-    blue:    '#556a7d'
-    magenta: '#75617b'
-    cyan:    '#5b7d78'
-    white:   '#828482'
-
-  # Indexed Colors
-  #
-  # The indexed colors include all colors from 16 to 256.
-  # When these are not set, they're filled with sensible defaults.
-  #
-  # Example:
-  #   `- { index: 16, color: '#ff00ff' }`
-  #
-  #indexed_colors: []
-
-# Bell
-#
-# The bell is rung every time the BEL control character is received.
-#bell:
-  # Visual Bell Animation
-  #
-  # Animation effect for flashing the screen when the visual bell is rung.
-  #
-  # Values for `animation`:
-  #   - Ease
-  #   - EaseOut
-  #   - EaseOutSine
-  #   - EaseOutQuad
-  #   - EaseOutCubic
-  #   - EaseOutQuart
-  #   - EaseOutQuint
-  #   - EaseOutExpo
-  #   - EaseOutCirc
-  #   - Linear
-  #animation: EaseOutExpo
-
-  # Duration of the visual bell flash. A `duration` of `0` will disable the
-  # visual bell animation.
-  #duration: 0
-
-  # Visual bell animation color.
-  #color: '#ffffff'
-
-  # Bell Command
-  #
-  # This program is executed whenever the bell is rung.
-  #
-  # When set to `command: None`, no command will be executed.
-  #
-  # Example:
-  #   command:
-  #     program: notify-send
-  #     args: ["Hello, World!"]
-  #
-  #command: None
 
 # Background opacity
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 1.0
+window.opacity: 1.0
 
 
 #selection:
