@@ -24,5 +24,5 @@ echo "Done!"
 # Configuring macOS
 if [[ $(uname -s) == "Darwin" ]]; then
     echo "macOS detected, running configure script..."
-    scripts/configure_macos_defaults.sh
+    scripts/configure-macos-defaults.sh
 fi

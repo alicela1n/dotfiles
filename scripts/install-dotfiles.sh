@@ -1,14 +1,16 @@
 #!/usr/bin/env bash
-git submodule update --init --depth 1
+scripts/install-oh-my-zsh.sh
 cp -v dotfiles/tmux.conf ~/.tmux.conf
 cp -v dotfiles/vimrc ~/.vimrc
 cp -v dotfiles/Xresources ~/.Xresources
-mkdir ~/.zsh
-cp -vr dotfiles/zsh/* ~/.zsh
-cp -r dotfiles/zshenv ~/.zshenv
-cp -r dotfiles/zshrc ~/.zshrc
+cp -v dotfiles/zshrc ~/.zshrc
+cp -v dotfiles/zshenv ~/.zshenv
+
 mkdir -p ~/.config
 cp -vr dotfiles/config/* ~/.config/
+mkdir -p ~/.zsh
+cp -vr dotfiles/zsh/* ~/.zsh/
+
 if [ "$(whoami)" == alice ]; then
     cp -vr dotfiles/gitconfig ~/.gitconfig
 fi

@@ -4,60 +4,8 @@ alias l="ls -lah" # Aliasing l to ls -lah because it's less typing
 alias c="clear" # Aliasing clear to c because it's less typing
 alias cls="clear" # Incase I accidentally type cls
 alias config_zsh="$EDITOR ~/.zshrc" # Open the zsh config in an editor
-alias vscode="/usr/bin/code" # Open in vscode
 alias edit="$EDITOR" # Edit a file
-
-# Folder Aliases
-alias pma="cd ~/.local/var/pmbootstrap/cache_git/pmaports" # Aliasing pma to enter postmarketOS aports directory
-alias dotfiles="cd ~/code/dotfiles" # Goto dotfiles repo
-alias docs="cd ~/Documents"
-alias downloads="cd ~/Downloads"
-alias code="cd ~/code"
-alias data="cd ~/data"
-
-# Paru aliases (Arch Linux)
-alias pas="paru -Ss" # Search pacman and AUR repositories
-alias paf="paru -Ql" # Show what files a package has installed
-alias pai="paru -S"  # Install
-alias par="paru -R"  # Remove package but not dependencies
-alias parr="paru -Rs" # Remove package and unused dependencies
-alias parrc="paru -Runsc" # Completely remove a package and any dependencies
-alias parc="paru -Sc" # Clean pacman cache
-alias parcc="paru -Scc" # Clean whole pacman cache
-alias parl="rm /var/lib/pacman/db.lck" # Remove pacman lock
-
-# Pacman aliases (Arch Linux)
-alias pacs="pacman -Ss" # Search pacman
-alias pacf="pacman -Ql" # Show what files a package has installed
-alias paci="sudo pacman -S" # Install
-alias pacr="sudo pacman -R" # Remove
-alias pacrr="sudo pacman -Rs" # Remove package and unused dependencies
-alias pacrc="sudo pacman -Sc" # Clean package cache
-alias pacrcc="sudo pacman -Scc" # Clean whole pacman cache
-alias parl="rm /var/lib/pacman/db.lck" # Remove pacman lock
-
-# Apt aliases (Ubuntu/Debian)
-alias ais="apt search" # Search database for packages
-alias ain="sudo apt install" # Install
-alias aps="apt show" # Show info about a package
-alias air="sudo apt remove" # Remove a package
-alias aip="sudo apt purge" # Purge a package and config files
-alias au="sudo apt update" # Refresh repos
-alias aiu="sudo apt update; sudo apt install" #  Refresh repos and install
-alias airl="sudo rm /var/lib/apt/lists/lock; sudo rm /var/lib/dpkg/lock; sudo rm /var/lib/dpkg/lock-frontend; sudo rm /var/cache/apt/archives/lock"
-
-# Apt-file aliases (Ubuntu/Debian)
-alias af="apt-file list"
-alias afs="apt-file search"
-
-# Emerge aliases (Gentoo)
-alias emerchu="sudo emerge" # Just for fun
-alias ema="sudo emerge --ask" # Emerge a package with --ask
-alias emd="sudo emerge --deselect" # Remove a package from world
-alias emu="sudo emerge -avuDN @world" # Update @world with --ask --verbose --update --deep --newuse
-alias ems="sudo emerge --search" # Search for a package
-alias emsy="sudo emerge --sync" # Sync portage tree
-alias emdc="sudo emerge --depclean" # Clean dependencies
+alias localpkgconfig="export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig"
 
 # Aliases for git
 alias gs='git status'
