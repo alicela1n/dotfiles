@@ -14,3 +14,6 @@ cp -vr dotfiles/zsh/* ~/.zsh/
 if [ "$(whoami)" == alice ]; then
     cp -vr dotfiles/gitconfig ~/.gitconfig
 fi
+
+# Install vim packages
+scripts/install-vim-packages.sh
