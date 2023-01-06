@@ -1,4 +1,5 @@
 " General
+set guifont=Menlo\ Regular:h15      " Set font and size
 set history=500                     " Set history in VIM to 500
 set number                          " Show line numbers (shown on side)
 syntax on                           " Syntax highlighting is fun and makes this usable as an editor
