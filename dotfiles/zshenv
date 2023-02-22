@@ -1,4 +1,4 @@
 ### Setting Environment variables
 LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 # Sets language variables
-PATH=$PATH:$HOME/.local/bin # Sets path variable
+PATH=$HOME/.local/bin:$PATH # Sets path variable
 EDITOR=vim # Default editor
