@@ -17,3 +17,5 @@ fi
 
 # Install vim packages
 scripts/install-vim-packages.sh
+# Install tmux packages
+scripts/install-tmux-packages.sh
