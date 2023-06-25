@@ -2,6 +2,7 @@
 echo "Creating directories in home"
 mkdir -pv ~/code
 mkdir -pv ~/os
+mkdir -pv ~/tmp
 mkdir -pv ~/Desktop
 mkdir -pv ~/Documents
 mkdir -pv ~/Downloads
