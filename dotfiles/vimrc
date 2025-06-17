@@ -1,5 +1,4 @@
 " General
-set guifont=Menlo\ Regular:h15      " Set font and size
 set history=500                     " Set history in VIM to 500
 set number                          " Show line numbers (shown on side)
 syntax on                           " Syntax highlighting is fun and makes this usable as an editor
@@ -21,6 +20,8 @@ set incsearch                       " Searches for strings incrementally
 
 " Indenting 
 set autoindent                      " Automatically indent new lines
+set noexpandtab			    
+set indentexpr=
 filetype plugin indent on           " File type based indention
 set shiftwidth=4                    " Number of auto-indent spaces
 set smarttab                        " Enable smart tab
