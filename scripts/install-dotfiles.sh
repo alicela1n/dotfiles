@@ -15,6 +15,8 @@ if [ "$(whoami)" == alice ]; then
     cp -vr dotfiles/gitconfig ~/.gitconfig
 fi
 
+# Install powerlevel10k
+scripts/install-powerlevel10k.sh
 # Install vim packages
 scripts/install-vim-packages.sh
 # Install tmux packages
