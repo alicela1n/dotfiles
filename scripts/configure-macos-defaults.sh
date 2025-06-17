@@ -32,6 +32,8 @@ defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 echo "Making finder better..."
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 defaults write com.apple.finder ShowRecentTags -bool false
+defaults write com.apple.finder "ShowPathbar" -bool "true"
+defaults write com.apple.Finder NewWindowTargetPath -string "file://$HOME"
 defaults write com.apple.finder SidebarDevicesSectionDisclosedState -bool true
 defaults write com.apple.finder SidebarMediaBrowserSectionDisclosedState -bool true
 defaults write com.apple.finder SidebarPlacesSectionDisclosedState -bool true
@@ -39,9 +41,12 @@ defaults write com.apple.finder SidebarSharedSectionDisclosedState -bool true
 defaults write com.apple.finder SidebarDevicesSectionDisclosedState -bool true
 defaults write com.apple.finder SidebarPlacesSectionDisclosedState -bool true
 defaults write com.apple.finder SidebarSharedSectionDisclosedState -bool true
+killall Finder
 
-echo "Showing transparent icons for hidden apps..."
+echo "Configuring dock..."
 defaults write com.apple.Dock showhidden -bool YES
+defaults write com.apple.dock "autohide" -bool "true"
+defaults write com.apple.dock "show-recents" -bool "false"
 killall Dock
 
 echo "Stopping time machine from offering new disks for backup..."
@@ -61,9 +66,3 @@ defaults write com.apple.iChat NSDisableAutomaticTermination -bool yes
 
 echo "Setting status bar clock..."
 defaults write com.apple.menuextra.clock "DateFormat" -string "\"EEE d MMM h:mm:ss\""
-
-echo "Showing library folder..."
-chflags nohidden ~/Library/
-
-echo "Disabling gatekeeper..."
-sudo spctl --master-disable
