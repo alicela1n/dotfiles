@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-scripts/install-oh-my-zsh.sh
 cp -v dotfiles/tmux.conf ~/.tmux.conf
 cp -v dotfiles/vimrc ~/.vimrc
 cp -v dotfiles/Xresources ~/.Xresources
 cp -v dotfiles/zshrc ~/.zshrc
+cp -v dotfiles/p10k.zsh ~/.p10k.zsh
 cp -v dotfiles/zshenv ~/.zshenv
 
 mkdir -p ~/.config
