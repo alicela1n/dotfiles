@@ -10,6 +10,7 @@ coreutils
 dmg2img
 dos2unix
 dosfstools
+fastfetch
 ffmpeg
 gawk
 gcc
@@ -23,7 +24,6 @@ mdf2iso
 meson
 mono
 nasm
-neofetch
 ninja
 node
 qemu
