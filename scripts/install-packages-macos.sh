@@ -7,3 +7,4 @@ cat packages/homebrew-cask | xargs brew install --cask --force
 
 echo "Installing homebrew packages..."
 cat packages/homebrew | xargs brew install
+cat packages/homebrew-macos-only | xargs brew install

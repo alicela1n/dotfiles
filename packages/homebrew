@@ -19,7 +19,6 @@ inetutils
 links
 llvm
 lynx
-mas
 mdf2iso
 meson
 mono
@@ -31,6 +30,7 @@ qemu
 ripgrep
 tmux
 vim
+wireguard-tools
 yarn
 yt-dlp
 zsh
