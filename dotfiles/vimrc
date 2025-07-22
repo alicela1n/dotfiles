@@ -20,7 +20,6 @@ set incsearch                       " Searches for strings incrementally
 
 " Indenting 
 set autoindent                      " Automatically indent new lines
+filetype plugin indent on           " File type based indention
 set noexpandtab			    
 set indentexpr=
-filetype plugin indent on           " File type based indention
-set softtabstop=4                   " Number of spaces per tab
