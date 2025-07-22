@@ -23,6 +23,4 @@ set autoindent                      " Automatically indent new lines
 set noexpandtab			    
 set indentexpr=
 filetype plugin indent on           " File type based indention
-set shiftwidth=4                    " Number of auto-indent spaces
-set smarttab                        " Enable smart tab
 set softtabstop=4                   " Number of spaces per tab
