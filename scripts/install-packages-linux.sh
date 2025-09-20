@@ -38,6 +38,9 @@ fi
 echo "Installing tailscale..."
 curl -fsSL https://tailscale.com/install.sh | sh
 
-echo "Installing Jetbrains Toolbox..."
-scripts/install-jetbrains-toolbox-linux.sh
+read -r -p "Do you want to install Jetbrains Toolbox? [y/N] " response
+if [[ "response" =~ ^(yes|y|Yes|Y)$ ]]; then
+    echo "Installing Jetbrains Toolbox..."
+    scripts/install-jetbrains-toolbox-linux.sh
+fi
 
