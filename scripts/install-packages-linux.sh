@@ -25,11 +25,14 @@ if [[ -f /usr/bin/dnf ]]; then
     echo "Instaling the rest of the packages..."
     sudo dnf install -y $(cat packages/fedora)
 else
-    echo "Installing linuxbrew..."
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    read -r -p "Do you want to use Linuxbrew? [y/N] " response
+    if [[ "$response" =~ ^(yes|y|Yes|Y)$ ]]; then
+        echo "Installing linuxbrew..."
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-    echo "Installing homebrew packages..."
-    cat packages/homebrew | xargs brew install
+        echo "Installing homebrew packages..."
+        cat packages/homebrew | xargs brew install
+    fi
 fi
 
 echo "Installing tailscale..."
