@@ -2,4 +2,6 @@
 LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 # Sets language variables
 PATH=$HOME/.local/bin:$PATH # Sets path variable
 EDITOR=vim # Default editor
-. "$HOME/.cargo/env"
+if [ -f "$HOME/.cargo/env" ]; then
+	. "$HOME/.cargo/env"
+fi
