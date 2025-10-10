@@ -66,3 +66,7 @@ defaults write com.apple.iChat NSDisableAutomaticTermination -bool yes
 
 echo "Setting status bar clock..."
 defaults write com.apple.menuextra.clock "DateFormat" -string "\"EEE d MMM h:mm:ss\""
+
+echo "Setting screenshots folder..."
+mkdir -p ~/Pictures/Screenshots
+defaults write com.apple.screencapture location -string ~/Pictures/Screenshots
