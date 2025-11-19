@@ -11,7 +11,7 @@ set backspace=indent,eol,start      " Backspace behavior
 :set mouse=a
 
 " Copy and paste behavior
-set clipboard=unnamedplus           " Use system clipboard
+set clipboard=unnamedplus,unnamed,autoselect           " Use system clipboard
 
 " Searching
 set hlsearch                        " Highlight all search results
