@@ -4,3 +4,6 @@ git clone https://github.com/rust-lang/rust.vim ~/.vim/pack/plugins/start/rust.v
 git clone https://github.com/kana/vim-operator-user.git ~/.vim/pack/plugins/start/vim-operator-user
 git clone https://github.com/Shougo/vimproc.vim.git ~/.vim/pack/plugins/start/vimproc.vim
 git clone https://github.com/rhysd/vim-clang-format.git ~/.vim/pack/plugins/start/vim-format-clang
+git clone https://github.com/vimwiki/vimwiki.git ~/.vim/pack/plugins/start/vimwiki
+git clone https://github.com/preservim/nerdtree.git ~/.vim/pack/vendor/start/nerdtree
+git clone https://github.com/puremourning/vimspector.git ~/.vim/pack/vendor/start/vimspector
