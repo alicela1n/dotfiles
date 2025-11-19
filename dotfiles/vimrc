@@ -8,6 +8,7 @@ set showmatch                       " Highlight matching brace
 set ruler                           " Show row and column ruler info
 set undolevels=1000                 " Number of undo levels
 set backspace=indent,eol,start      " Backspace behavior
+:set mouse=a
 
 " Copy and paste behavior
 set clipboard=unnamedplus           " Use system clipboard
