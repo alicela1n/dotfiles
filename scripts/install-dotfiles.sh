@@ -12,7 +12,7 @@ mkdir -p ~/.zsh
 cp -vr dotfiles/zsh/* ~/.zsh/
 
 mkdir -p ~/.config/kitty
-cp -vr dotfiles/kitty/kitty.conf ~/.config/kitty/
+cp -vr dotfiles/config/kitty/kitty.conf ~/.config/kitty/
 
 if [ "$(whoami)" == alice ]; then
     cp -vr dotfiles/gitconfig ~/.gitconfig
