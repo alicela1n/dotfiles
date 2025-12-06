@@ -70,3 +70,11 @@ defaults write com.apple.menuextra.clock "DateFormat" -string "\"EEE d MMM h:mm:
 echo "Setting screenshots folder..."
 mkdir -p ~/Pictures/Screenshots
 defaults write com.apple.screencapture location -string ~/Pictures/Screenshots
+
+echo "Disabling mouse acceleration..."
+defaults write NSGlobalDomain com.apple.mouse.linear -bool "true"
+
+echo "Enabling key repeat..."
+defaults write NSGlobalDomain "ApplePressAndHoldEnabled" -bool "false"
+
+
