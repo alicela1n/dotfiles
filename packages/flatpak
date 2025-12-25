@@ -11,5 +11,6 @@ md.obsidian.Obsidian
 org.signal.Signal
 com.github.ahrm.sioyek
 com.transmissionbt.Transmission
+org.telegram.desktop
 org.videolan.VLC
 org.wireshark.Wireshark
