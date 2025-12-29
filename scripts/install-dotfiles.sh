@@ -6,8 +6,6 @@ cp -v dotfiles/zshrc ~/.zshrc
 cp -v dotfiles/p10k.zsh ~/.p10k.zsh
 cp -v dotfiles/zshenv ~/.zshenv
 
-mkdir -p ~/.config
-cp -vr dotfiles/config/* ~/.config/
 mkdir -p ~/.zsh
 cp -vr dotfiles/zsh/* ~/.zsh/
 
@@ -16,6 +14,10 @@ cp -vr dotfiles/config/kitty/kitty.conf ~/.config/kitty/
 if [[ $(uname -s) == "Darwin" ]]; then
     cp -vr dotfiles/config/kitty/kitty.app.png ~/.config/kitty/
 fi
+
+mkdir -p ~/.config/htop
+cp -vr dotfiles/config/htop/htoprc ~/.config/htop
+
 if [ "$(whoami)" == alice ]; then
     cp -vr dotfiles/gitconfig ~/.gitconfig
 fi
