@@ -13,8 +13,9 @@ cp -vr dotfiles/zsh/* ~/.zsh/
 
 mkdir -p ~/.config/kitty
 cp -vr dotfiles/config/kitty/kitty.conf ~/.config/kitty/
-cp -vr dotfiles/config/kitty/kitty.app.png ~/.config/kitty/
-
+if [[ $(uname -s) == "Darwin" ]]; then
+    cp -vr dotfiles/config/kitty/kitty.app.png ~/.config/kitty/
+fi
 if [ "$(whoami)" == alice ]; then
     cp -vr dotfiles/gitconfig ~/.gitconfig
 fi
