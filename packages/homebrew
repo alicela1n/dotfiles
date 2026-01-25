@@ -29,7 +29,6 @@ node
 qemu
 ripgrep
 tmux
-vim
 wireguard-tools
 yarn
 yt-dlp
