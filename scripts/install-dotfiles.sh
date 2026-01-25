@@ -5,6 +5,7 @@ cp -v dotfiles/Xresources ~/.Xresources
 cp -v dotfiles/zshrc ~/.zshrc
 cp -v dotfiles/p10k.zsh ~/.p10k.zsh
 cp -v dotfiles/zshenv ~/.zshenv
+cp -v dotfiles/gvimrc ~/.gvimrc
 
 mkdir -p ~/.zsh
 cp -vr dotfiles/zsh/* ~/.zsh/
