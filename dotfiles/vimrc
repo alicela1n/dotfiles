@@ -36,7 +36,16 @@ nmap <silent> <M-h> :wincmd h<CR>
 nmap <silent> <M-l> :wincmd l<CR>
 
 " Open new window (horizontal)
-nmap <M-n> :new<CR>
+nmap <silent> <M-n> :new<CR>
+
+" Split horizontally
+nmap <silent> <M-s> :split<CR>
+
+" Split vertically
+nmap <silent> <M-S-s> :vsplit<CR>
 
 " Open a terminal
 nmap <M-Return> :terminal<CR>
+
+" Reload vimrc
+nmap <M-r> :source $HOME/.vimrc<CR>
