@@ -25,3 +25,18 @@ filetype plugin indent on           " File type based indention
 set smarttab
 set noexpandtab			    
 set indentexpr=
+
+" Vim key mappings
+set macmeta
+
+" Use meta-[hjkl] to select the active split!
+nmap <silent> <M-k> :wincmd k<CR>
+nmap <silent> <M-j> :wincmd j<CR>
+nmap <silent> <M-h> :wincmd h<CR>
+nmap <silent> <M-l> :wincmd l<CR>
+
+" Open new window (horizontal)
+nmap <M-n> :new<CR>
+
+" Open a terminal
+nmap <M-Return> :terminal<CR>
