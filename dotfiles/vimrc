@@ -27,7 +27,12 @@ set noexpandtab
 set indentexpr=
 
 " Vim key mappings
-set macmeta
+if has("unix")
+	let s:uname = system("uname -s")
+	if s:uname == "Darwin"
+		set macmeta
+	endif
+endif
 
 " Use meta-[hjkl] to select the active split!
 nmap <silent> <M-k> :wincmd k<CR>
@@ -46,6 +51,9 @@ nmap <silent> <M-S-s> :vsplit<CR>
 
 " Open a terminal
 nmap <M-Return> :terminal<CR>
+
+" Swap panes with next window
+nmap <M-x> <C-w>x
 
 " Reload vimrc
 nmap <M-r> :source $HOME/.vimrc<CR>
