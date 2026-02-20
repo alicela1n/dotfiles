@@ -10,8 +10,10 @@ set undolevels=1000                 " Number of undo levels
 set backspace=indent,eol,start      " Backspace behavior
 :set mouse=a
 
-" Copy and paste behavior
-set clipboard=unnamedplus,unnamed,autoselect           " Use system clipboard
+if has("clipboard=unnamedplus,unnamed,autoselect")
+	" Copy and paste behavior
+	set clipboard=unnamedplus,unnamed,autoselect           " Use system clipboard
+endif
 
 " Searching
 set hlsearch                        " Highlight all search results
