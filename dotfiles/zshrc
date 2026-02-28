@@ -1,6 +1,6 @@
 if [[ "${SIMPLE_SHELL:-false}" == "true" ]]; then
 	# Simpler prompt for computers without powerline or nerd fonts
-	PS1="%F{3}%n@%m%f %F{5}%~%f %F{15}%% %f"
+	PS1="%F{yellow}%n@%m%f %F{magenta}%~%f %F{white}%% %f"
 else
 	# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 	# Initialization code that may require console input (password prompts, [y/n]
