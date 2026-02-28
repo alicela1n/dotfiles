@@ -1,4 +1,6 @@
 if [[ "${SIMPLE_SHELL:-false}" == "true" ]]; then
+	# Load color module
+	autoload -U colors && colors
 	# Simpler prompt for computers without powerline or nerd fonts
 	PS1="%F{yellow}%n@%m%f %F{magenta}%~%f %F{white}%% %f"
 else
