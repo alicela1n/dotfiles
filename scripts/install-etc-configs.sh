@@ -10,3 +10,8 @@ if [[ -f /usr/bin/pacman ]]; then
 fi
 sudo mkdir -pv /etc/profile.d
 sudo cp -vi etc/profile.d/* /etc/profile.d
+
+if [[ $(uname -s) == "Darwin" ]]; then
+    echo "Setting motd..."
+    echo "Welcome to Darwin!" | sudo tee /etc/motd
+fi
