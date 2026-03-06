@@ -13,9 +13,9 @@ if [[ "${SIMPLE_SHELL:-false}" == "true" ]]; then
 	zstyle ':vcs_info:git:*' nvcsformats ""
 
 	setopt prompt_subst
-
+	
 	# Simpler prompt for computers without powerline or nerd fonts
-	PS1="%F{white}%*%f %F{magenta}%n%F{green}@%f%F{yellow}%m%f %F{magenta}%~%f%F{green} "'${vcs_info_msg_0_}'"%f%F{%(?.green.red)}>>%f " 
+	PS1="%F{white}%*%f %F{magenta}%n%F{green}@%f%F{yellow}%m%f %F{magenta}%~%f%F{green} "'${vcs_info_msg_0_}'"%f%F{%(?.green.red)}%(?..%B(%?%)%b)>>%f " 
 else
 	# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 	# Initialization code that may require console input (password prompts, [y/n]
