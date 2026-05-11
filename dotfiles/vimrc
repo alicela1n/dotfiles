@@ -30,12 +30,6 @@ set indentexpr=
 
 " Vim key mappings
 
-" Check if running on macOS
-let s:uname = system("echo -n \"$(uname)\"")
-if !v:shell_error && s:uname == "Darwin"
-	set macmeta
-endif
-
 " Use meta-[hjkl] to select the active split!
 nmap <silent> <M-k> :wincmd k<CR>
 nmap <silent> <M-j> :wincmd j<CR>
