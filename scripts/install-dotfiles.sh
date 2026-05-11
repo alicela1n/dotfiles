@@ -19,6 +19,9 @@ fi
 mkdir -p ~/.config/htop
 cp -vr dotfiles/config/htop/htoprc ~/.config/htop
 
+mkdir -p ~/.config/nvim
+cp -vr dotfiles/config/nvim/init.vim ~/.config/nvim
+
 if [ "$(whoami)" == alice ]; then
     cp -vr dotfiles/gitconfig ~/.gitconfig
 fi
