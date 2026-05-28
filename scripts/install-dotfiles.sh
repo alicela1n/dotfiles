@@ -28,7 +28,5 @@ fi
 
 # Install powerlevel10k
 scripts/install-powerlevel10k.sh
-# Install vim packages
-scripts/install-vim-packages.sh
 # Install tmux packages
 scripts/install-tmux-packages.sh
