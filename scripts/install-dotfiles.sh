@@ -19,6 +19,9 @@ fi
 mkdir -p ~/.config/htop
 cp -vr dotfiles/config/htop/htoprc ~/.config/htop
 
+# Install lazy nvim
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+
 mkdir -p ~/.config/nvim
 cp -vr dotfiles/config/nvim/init.vim ~/.config/nvim
 
