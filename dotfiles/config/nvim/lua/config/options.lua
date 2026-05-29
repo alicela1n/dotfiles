@@ -14,6 +14,7 @@ vim.opt.undolevels = 1000 -- Number of undo levels
 vim.opt.backspace = { "indent", "eol", "start" }
 vim.opt.mouse = "a"
 vim.opt.clipboard = "unnamedplus"
+vim.wo.relativenumber = false -- Explicitly set to false
 
 -- Searching
 vim.opt.hlsearch = true -- Highlight all search results
