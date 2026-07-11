@@ -71,6 +71,10 @@ echo "Setting screenshots folder..."
 mkdir -p ~/Pictures/Screenshots
 defaults write com.apple.screencapture location -string ~/Pictures/Screenshots
 
+echo "Using jpeg for screenshots..."
+defaults write com.apple.screencapture type jpg
+killall SystemUIServer
+
 echo "Disabling mouse acceleration..."
 defaults write NSGlobalDomain com.apple.mouse.linear -bool "true"
 
