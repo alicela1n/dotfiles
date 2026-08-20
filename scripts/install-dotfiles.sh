@@ -16,6 +16,14 @@ if [[ $(uname -s) == "Darwin" ]]; then
     cp -vr dotfiles/config/kitty/kitty.app.png ~/.config/kitty/
 fi
 
+if [[ $(uname -s) == "Darwin" ]]; then
+    mkdir -p $HOME/Library/Application\ Support/com.mitchellh.ghostty
+    cp -vr dotfiles/ghostty/config.ghostty $HOME/Library/Application\ Support/com.mitchellh/ghostty
+else
+    mkdir -p ~/.config/ghostty
+    cp -vr dotfiles/ghostty/config.ghostty ~/.config/ghostty
+fi
+
 mkdir -p ~/.config/htop
 cp -vr dotfiles/config/htop/htoprc ~/.config/htop
 
