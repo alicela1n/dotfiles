@@ -18,7 +18,7 @@ fi
 
 if [[ $(uname -s) == "Darwin" ]]; then
     mkdir -p $HOME/Library/Application\ Support/com.mitchellh.ghostty
-    cp -vr dotfiles/ghostty/config.ghostty $HOME/Library/Application\ Support/com.mitchellh/ghostty
+    cp -vr dotfiles/ghostty/config.ghostty $HOME/Library/Application\ Support/com.mitchellh.ghostty/config.ghostty
 else
     mkdir -p ~/.config/ghostty
     cp -vr dotfiles/ghostty/config.ghostty ~/.config/ghostty
