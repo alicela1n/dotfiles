@@ -7,10 +7,10 @@ Element.Element
 XP89119P9F2PCQ
 HandBrake.HandBrake
 WerWolv.ImHex
-TheDocumentFoundation.LibreOffice
 LocalSend.LocalSend
 Obsidian.Obsidian
 OBSProject.OBSStudio
+ONLYOFFICE.DesktopEditors
 Telegram.TelegramDesktop
 Mozilla.Thunderbird
 Microsoft.WSL
