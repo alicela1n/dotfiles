@@ -239,6 +239,11 @@ require("lazy").setup({
 						"\\.uid$",
 					},
 				},
+				git = {
+				    enable = true,
+				    ignore = false,
+				    timeout = 400,
+				},
 			})
 		end,
 	},
