@@ -1,4 +1,4 @@
-com.discordapp.Discord
+app.legcord.Legcord
 com.dosbox_x.DOSBox-X
 im.riot.Riot
 org.mozilla.firefox
@@ -10,7 +10,6 @@ org.onlyoffice.desktopeditors
 com.obsproject.Studio
 md.obsidian.Obsidian
 org.signal.Signal
-com.github.ahrm.sioyek
 com.transmissionbt.Transmission
 org.telegram.desktop
 org.videolan.VLC
