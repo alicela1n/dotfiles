@@ -30,6 +30,9 @@ cp -vr dotfiles/config/htop/htoprc ~/.config/htop
 mkdir -p ~/.config/nvim
 cp -vr dotfiles/config/nvim/* ~/.config/nvim
 
+mkdir -p ~/.config/pip
+cp -vr dotfiles/config/pip/* ~/.config/pip
+
 if [ "$(whoami)" == alice ]; then
     cp -vr dotfiles/gitconfig ~/.gitconfig
 fi
