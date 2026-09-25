@@ -14,6 +14,10 @@ if [[ -f /usr/bin/dnf ]]; then
   https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
     sudo dnf install \
   https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
+    echo "Enabling terra..."
+    sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
+
     sudo dnf group upgrade -y core
 
     echo "Updating all packages..."
