@@ -1,0 +1,3 @@
+#!/bin/bash
+infocmp -x xterm-ghostty | ssh $@ -- tic -x -
+ssh $@

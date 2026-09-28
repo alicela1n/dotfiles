@@ -9,6 +9,7 @@ mkdir -pv ~/Downloads
 mkdir -pv ~/Pictures
 mkdir -pv ~/Videos
 mkdir -pv ~/Music
+mkdir -pv ~/.local/bin
 if [[ ! -f "~/code/dotfiles" ]]; then
     git clone $(git remote show origin | grep 'Fetch URL:' | sed 's/  Fetch URL: //g') ~/code/dotfiles
 fi
