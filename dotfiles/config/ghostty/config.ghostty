@@ -1,3 +1,6 @@
 theme = Neon
 font-family = "Hack Nerd Font"
 font-size = "16"
+
+shell-integration-features = ssh-terminfo,ssh-env
+macos-option-as-alt = true
